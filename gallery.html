@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Numerates — MIT-WPU</title>
+  <meta name="description" content="Photos from Numerates events — workshops, treasure hunts, bootcamps and more." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="dot"></div>
+    <span>Loading...</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">NUMER<span>A</span>TES</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="join.html" class="nav-cta">Join Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="join.html" style="color:var(--cyan);font-weight:700;">Join Us →</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="gallery-hero">
+    <div class="container">
+      <div class="section-tag">Our Moments</div>
+      <h1>Gallery of <em>Numerates</em></h1>
+      <p>Snapshots from our workshops, treasure hunts, bootcamps and everything in between.</p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="gallery-filter-bar">
+    <div class="container" id="galleryFilters">
+      <button class="gallery-filter-btn active" data-filter="all">All</button>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="container">
+      <div id="galleryLoading" class="gallery-loading">
+        <div class="loading-spinner"></div>
+        <p>Loading gallery...</p>
+      </div>
+      <div id="galleryWrap"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">NUMER<span>A</span>TES</span>
+          <p>MIT-WPU's student-run math and technology club, Pune.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="join.html">Join Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:numerates@mitwpu.edu.in"><i class="fa-solid fa-envelope"></i> &nbsp;numerates@mitwpu.edu.in</a></li>
+            <li><a href="https://instagram.com/mitwpunumerates" target="_blank"><i class="fa-brands fa-instagram"></i> &nbsp;@mitwpunumerates</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i> &nbsp;MIT-WPU, Pune</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Numerates, MIT-WPU. All rights reserved.</span>
+        <div class="footer-socials">
+          <a href="https://instagram.com/mitwpunumerates" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:numerates@mitwpu.edu.in"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="lightbox-inner">
+      <img id="lbImg" src="" alt="Gallery photo" />
+      <div class="lb-caption" id="lbCaption"></div>
+    </div>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+/* ============================================
+   NUMERATES — About Page Styles
+   about.css — loaded only on about.html
+   ============================================ */
+
+/* ── Hero ── */
+.about-hero {
+  background: var(--navy-dark);
+  border-bottom: 1px solid var(--border);
+  padding: 64px 0 52px;
+  position: relative;
+  overflow: hidden;
+}
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 450px; height: 450px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,201,200,0.07) 0%, transparent 65%);
+  pointer-events: none;
+}
+.about-hero .container { position: relative; z-index: 1; }
+.about-hero h1 {
+  font-family: var(--font-head);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 16px 0 14px;
+  line-height: 1.15;
+}
+.about-hero h1 em { font-style: normal; color: var(--cyan); }
+.about-hero p { font-size: 15px; color: var(--text-muted); max-width: 560px; line-height: 1.85; }
+
+/* ── Story Section ── */
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.story-text p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+.story-text p:last-child { margin-bottom: 0; }
+
+.story-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.story-stat {
+  background: var(--navy-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.story-stat:hover { border-color: var(--cyan); transform: translateY(-3px); }
+.story-stat .num {
+  font-family: var(--font-head);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cyan);
+  display: block;
+}
+.story-stat .lbl {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+  display: block;
+}
+
+/* ── Mission / Vision / Values ── */
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mvv-card {
+  background: var(--navy-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.mvv-card:hover { border-color: var(--cyan); transform: translateY(-3px); }
+
+.mvv-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.mvv-card h3 {
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+
+.mvv-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* ── Values ── */
+.values-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--navy-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  transition: border-color var(--transition);
+}
+.value-item:hover { border-color: var(--cyan); }
+
+.value-item .icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.value-item h4 { font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
+.value-item p { font-size: 13px; color: var(--text-dim); line-height: 1.6; }
+
+/* ── Team Section ── */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.team-card {
+    background: var(--card);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.team-photo img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.team-photo {
+    position: relative;
+}
+
+.team-initials {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.team-info {
+    padding: 20px;
+}
+
+.team-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.team-department {
+    color: var(--cyan);
+    margin-top: 6px;
+}
+
+.team-role {
+    color: var(--text-dim);
+    margin-top: 6px;
+}
+
+.team-linkedin {
+    display: inline-block;
+    margin-top: 14px;
+}
+/* ── Alumni Section ── */
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.alumni-card {
+  background: var(--navy-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.alumni-card:hover { border-color: var(--cyan); transform: translateY(-3px); }
+
+.alumni-photo {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+  position: relative;
+}
+.alumni-photo img { width: 100%; height: 100%; object-fit: cover; }
+.alumni-initials {
+  width: 100%; height: 100%;
+  background: var(--navy-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+.alumni-info { flex: 1; min-width: 0; }
+.alumni-name { font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 3px; }
+.alumni-batch { font-size: 11px; color: var(--cyan); font-family: var(--font-head); margin-bottom: 5px; }
+.alumni-doing { font-size: 12px; color: var(--text-muted); line-height: 1.5; margin-bottom: 8px; }
+.alumni-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text-dim);
+  transition: color var(--transition);
+}
+.alumni-linkedin:hover { color: var(--cyan); }
+
+/* ── Loading ── */
+.alumni-loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+.alumni-loading .loading-spinner {
+  width: 32px; height: 32px;
+  border: 3px solid var(--border);
+  border-top-color: var(--cyan);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 14px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Faculty ── */
+.faculty-card {
+  background: var(--navy-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 500px;
+}
+.faculty-avatar {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: var(--cyan-glow);
+  border: 2px solid rgba(0,201,200,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.faculty-name { font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
+.faculty-dept { font-size: 13px; color: var(--text-muted); }
+.faculty-label {
+  font-family: var(--font-head);
+  font-size: 10px;
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .story-grid  { grid-template-columns: 1fr; }
+  .mvv-grid    { grid-template-columns: 1fr 1fr; }
+  .alumni-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .about-hero h1 { font-size: 28px; }
+  .mvv-grid    { grid-template-columns: 1fr; }
+  .values-list { grid-template-columns: 1fr; }
+  .alumni-grid { grid-template-columns: 1fr; }
+  .story-stats { grid-template-columns: 1fr 1fr; }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Numerates Summer Workshop</title>
+  <meta name="description" content="Register for Mathematics in Daily Life — Numerates Summer Workshop at MIT-WPU, June 1-5 2025." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/register.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar" id="announcementBar"><div class="dot"></div><span>Loading...</span></div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">NUMER<span>A</span>TES</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="join.html" class="nav-cta">Join Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="join.html" style="color:var(--cyan); font-weight:700;">Join Us →</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="register-hero">
+    <div class="container">
+      <div class="register-hero-inner">
+
+        <div class="register-hero-text fade-up">
+          <div class="section-tag">Summer Workshop 2025</div>
+          <h1>Register for<br><em>Mathematics</em><br>in Daily Life.</h1>
+          <p>
+            A 5-day intensive workshop at MIT-WPU Pune — from prompt engineering and Gen AI
+            to data analytics and real-world problem solving. Free entry, open to all students.
+          </p>
+        </div>
+
+        <div class="workshop-info-card fade-up">
+          <div class="card-top">
+            <span class="badge">📅 Free Entry · All Students Welcome</span>
+            <h3>Mathematics in Daily Life</h3>
+            <p>Prompt engineering, Gen AI, data analytics and more — taught the way you'll actually use them.</p>
+          </div>
+          <div class="card-details">
+            <div class="info-row">
+              <div class="icon">📅</div>
+              <div class="info-text">
+                <strong>June 1 – June 5, 2025</strong>
+                <span>5-day intensive workshop</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="icon">🕙</div>
+              <div class="info-text">
+                <strong>10:00 AM – 12:00 PM</strong>
+                <span>Lecture session daily</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="icon">🔬</div>
+              <div class="info-text">
+                <strong>1:00 PM – 3:00 PM</strong>
+                <span>Hands-on lab session daily</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="icon">📍</div>
+              <div class="info-text">
+                <strong>Maitreyi, MIT-WPU</strong>
+                <span>Pune, Maharashtra</span>
+              </div>
+            </div>
+          </div>
+          <div class="workshop-topics-mini">
+            <span class="topic-mini">Prompt Engineering</span>
+            <span class="topic-mini">Gen AI</span>
+            <span class="topic-mini">Data Analytics</span>
+            <span class="topic-mini">Applied Maths</span>
+            <span class="topic-mini">ML Basics</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="form-section" id="form">
+    <div class="container">
+
+      <div class="form-header fade-up">
+        <div class="section-tag">Register</div>
+        <h2 class="section-title">Fill in your details</h2>
+        <p>All fields marked with <span style="color:var(--cyan)">*</span> are required. We'll confirm your registration via email.</p>
+      </div>
+
+      <div class="form-card fade-up">
+        <p class="req-note">Fields marked <span>*</span> are required</p>
+
+        <form id="registerForm" novalidate>
+
+          <div class="form-group">
+            <label for="name">Name of the Student <span class="req">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="course">Course / Class <span class="req">*</span></label>
+              <input type="text" id="course" name="course" placeholder="e.g. B.Tech CSE, Class 12" required />
+            </div>
+            <div class="form-group">
+              <label for="college">University / College / School <span class="req">*</span></label>
+              <input type="text" id="college" name="college" placeholder="Name of your institution" required />
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="city">City / Town <span class="req">*</span></label>
+              <input type="text" id="city" name="city" placeholder="Your city or town" required />
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp Number <span class="req">*</span></label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email ID <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="motivation">What motivates you to join this Workshop? <span class="req">*</span></label>
+            <textarea id="motivation" name="motivation" placeholder="Tell us what excites you about this workshop and what you hope to learn..." required></textarea>
+          </div>
+
+          <div class="form-submit-wrap">
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span id="btnText"><i class="fa-solid fa-paper-plane"></i> &nbsp;Submit Registration</span>
+              <div class="spinner" id="spinner"></div>
+            </button>
+          </div>
+
+          <div class="form-message success" id="successMsg" style="display:none;">
+            🎉 You're registered! We'll send a confirmation to your email shortly. See you at the workshop!
+          </div>
+          <div class="form-message error" id="errorMsg" style="display:none;">
+            ❌ Something went wrong. Please try again or email us at numerates@mitwpu.edu.in
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">NUMER<span>A</span>TES</span>
+          <p>MIT-WPU's student-run math and technology club, Pune. Making problem-solving feel like an adventure since day one.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="join.html">Join Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:numerates@mitwpu.edu.in"><i class="fa-solid fa-envelope"></i> &nbsp;numerates@mitwpu.edu.in</a></li>
+            <li><a href="https://instagram.com/mitwpunumerates" target="_blank"><i class="fa-brands fa-instagram"></i> &nbsp;@mitwpunumerates</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i> &nbsp;MIT-WPU, Pune</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Numerates, MIT-WPU. All rights reserved.</span>
+        <div class="footer-socials">
+          <a href="https://instagram.com/mitwpunumerates" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:numerates@mitwpu.edu.in"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>
